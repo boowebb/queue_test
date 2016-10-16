@@ -15,7 +15,7 @@ class QueueTest
 
   def perform(output)
     logger = Logger.new("output.log")
-    logger.info "#{ Time.now.utc.to_i },#{ output },#{ rand(10000) / 100.00 }"
+    logger.info ",#{ Time.now.utc.to_i },#{ output },#{ rand(10000) / 100.00 }"
   end
 end
 
